@@ -1,0 +1,31 @@
+                                ##Gemeinsame Grundlagen##
+                            Datenprüfung · Würfel · Modifikatoren
+                                            
+                                            ↓
+
+                                    ##Basisregeln##
+                    Attribute · Übungsbonus · Proben · Vorteil/Nachteil
+
+                                            ↓
+
+            ##Kampf##                                               ##Zauberei##
+    Angriff · Initiative · RK                               Zauberangriff · Rettungswurf-SG
+
+                                            ↓
+
+                                ##Schaden und Heilung##
+                    Schadenswürfe · Trefferpunkte · Heilung · Zustände
+
+
+
+Unsere Regeln für Abhängigkeiten
+
+1. Allgemeine Berechnungen liegen zentral. Die Ermittlung eines Attributsmodifikators wird beispielsweise nicht in Kampf und Zauberei doppelt geschrieben.
+
+2. Fachmodule rufen gemeinsame Funktionen auf. Ein Schwertangriff verwendet die gemeinsame Würfelmechanik und ergänzt sie um die Kampfregeln.
+
+3. Daten und Regeln bleiben unterscheidbar. Ein Schwert enthält beispielsweise seine Schadenswürfel als Daten. Die Funktion, die diese Würfel auswertet, gehört in die Regelberechnung.
+
+4. Sonderregeln erweitern oder verändern vorhandene Abläufe. Sie sollen nicht die gesamte Grundregel kopieren.
+
+5 Abhängigkeiten dürfen keine unkontrollierten Kreise bilden. Wenn die Basisregeln plötzlich auf das Kampfmodul angewiesen wären, müssten wir die Zuständigkeiten überprüfen.

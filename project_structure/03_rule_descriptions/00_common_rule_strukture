@@ -1,0 +1,49 @@
+Jeder Regel-Eintrag enthält:
+
+- Zweck: Was regelt die Mechanik?
+- Auslöser: Wann wird sie angewendet?
+- Eingaben: Welche Werte braucht sie?
+- Berechnung: Welche Formel oder Entscheidung schreibt das Regelwerk vor?
+- Ergebnis: Was kommt zurück oder wird verändert?
+- Abhängigkeiten: Welche anderen Regeln benötigt sie?
+- Sonderfälle: Welche Ausnahmen sind vorgesehen?
+- Testfälle: Welche Beispiele müssen funktionieren?
+- Quelle: PDF-Seite und möglichst der genaue Abschnitt.
+
+
+Beispiel: Attributsmodifikator
+
+Regel: BASE-ATTR-001
+
+Modul: Basisregeln → Attribute
+
+Zweck: Aus einem Attributswert den Modifikator ermitteln, der bei vielen Proben und Angriffen verwendet wird.
+
+Eingabe: Ein gültiger Attributswert.
+
+Berechnung: Für die übliche 5e-Modifikatorregel gilt als vorläufiges Rechenbeispiel:
+
+          Modifikator = [ Attribut − 10 ​]
+                                2
+
+Beispielwerte:
+                    Attribut        Modifikator
+                        8               -1
+                        10              +0
+                        14              +2
+                        16              +3
+                        20              +5
+
+Abhängigkeiten: Keine fachlichen Regelmodule; benötigt nur eine gültige Zahl.
+
+Tests: Werte unterhalb, auf und oberhalb der Schwellen prüfen; ungültige Eingaben müssen erkannt werden.
+
+Die Formel ist hier ein Planungsbeispiel. Vor der Freigabe gleichen wir sie mit der konkreten Darstellung im Schnellstarter ab und dokumentieren die Quelle.
+
+
+
+Das Beispiel zeigt auch, wie wir mit fehlerhaften Daten umgehen: 
+
+- Ein fehlender Attributswert darf nicht automatisch als null behandelt werden. 
+- Ein ausdrücklich optionaler Bonus darf dagegen gemäß seiner Regel mit 0 angesetzt werden. 
+- So vermeiden wir, dass ein Datenfehler unbemerkt zu einem falschen Würfelergebnis führt.

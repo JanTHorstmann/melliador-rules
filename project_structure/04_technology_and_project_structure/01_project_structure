@@ -1,0 +1,21 @@
+melliador-rules/
+├── docs/
+│   ├── ROADMAP.md
+│   ├── RULE_CATALOG.md
+│   ├── DEPENDENCIES.md
+│   └── ARCHITECTURE.md
+├── src/
+│   ├── core/
+│   ├── base-rules/
+│   ├── combat/
+│   ├── damage-healing/
+│   ├── characters/
+│   ├── equipment/
+│   ├── magic/
+│   └── special-rules/
+├── tests/
+│   ├── fixtures/
+│   ├── core/
+│   └── rules/
+├── package.json
+└── README.md
