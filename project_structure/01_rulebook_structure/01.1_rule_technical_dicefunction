@@ -1,0 +1,38 @@
+### Technische Festlegung – Wurffunktionen
+
+**Status:** ABGELEITET – Architekturentscheidung
+
+**Ziel:** Die Würfelmechanik wird in eine gemeinsame Würfelfunktion und drei getrennte Wurffunktionen aufgeteilt.
+
+**`rollD20()`**
+- Erzeugt einen W20-Wurf.
+- Gibt eine ganze Zahl von 1 bis einschließlich 20 zurück.
+- Berechnet keine Modifikatoren und bewertet keinen Erfolg.
+
+**`rollAttack()`**
+- Verwendet `rollD20()`.
+- Verarbeitet die für den Angriff vorgesehenen Modifikatoren.
+- Vergleicht das Gesamtergebnis mit der Ziel-Rüstungsklasse.
+
+**`rollAttribute()`**
+- Verwendet `rollD20()`.
+- Verarbeitet die für den Attributswurf vorgesehenen Modifikatoren.
+- Vergleicht das Gesamtergebnis mit dem Schwierigkeitsgrad (SG).
+
+**`rollSaving()`**
+- Verwendet `rollD20()`.
+- Verarbeitet die für den Rettungswurf vorgesehenen Modifikatoren.
+- Vergleicht das Gesamtergebnis mit dem Schwierigkeitsgrad (SG).
+
+**Rückgabestruktur der drei Wurffunktionen**
+- `dieResult`: gewürfelter W20-Wert
+- `modifier`: angewendeter Gesamtmodifikator
+- `target`: Ziel-RK oder SG
+- `total`: Würfelwert plus Gesamtmodifikator
+- `success`: Ergebnis der Erfolgsprüfung
+
+**Erfolgsprüfung:** Ein Wurf ist erfolgreich, wenn `total` den Zielwert erreicht oder überschreitet. Abweichende Sonderregeln müssen gesondert spezifiziert werden.
+
+**Verantwortlichkeit:** Die Wurffunktionen liefern die Berechnungsergebnisse unabhängig von der späteren Darstellung. Die Benutzeroberfläche entscheidet, welche Informationen angezeigt werden.
+
+**Offen:** Zusammensetzung und Ermittlung der einzelnen Modifikatoren sowie mögliche Sonderregeln für kritische Ergebnisse.
