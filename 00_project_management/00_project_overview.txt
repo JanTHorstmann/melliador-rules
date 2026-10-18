@@ -1,0 +1,36 @@
+PROJEKT: Melliador Rules
+
+ZWECK
+Entwicklung eines eigenständigen Regelsystems für Melliador
+innerhalb von Foundry VTT.
+
+ZIEL
+Die Melliador-Regeln sollen so vollständig wie sinnvoll
+technisch umgesetzt werden. Die Regelberechnung soll dabei
+unabhängig vom verwendeten Charakterbogen funktionieren.
+
+PROJEKTGRENZEN
+- Melliador Rules enthält die Regelberechnungen.
+- Melliador Helpers bleibt ein separates Charakterbogen-
+  und Darstellungsprojekt.
+- Foundry VTT stellt die Plattform und ihre APIs bereit.
+- Das Regelsystem soll nicht von D&D 5e abhängig sein.
+- Andere Charakterbögen sollen später dieselbe öffentliche
+  Wurfschnittstelle verwenden können.
+
+TECHNOLOGIE
+- JavaScript als Sprache für den Regelkern
+- ES-Module zur Aufteilung des Codes
+- HTML und CSS für die Benutzeroberfläche, sofern benötigt
+- JSON für geeignete statische Regeldaten
+- Automatisierte Tests für die Regelberechnungen
+
+GRUNDSATZ
+Die offiziellen Melliador-Regeln sind die fachliche Grundlage.
+Technische Entscheidungen dürfen keine unbelegten Spielregeln
+hinzufügen.
+
+DOKUMENTATIONSSTATUS
+BELEGT: Aussagen, die durch eine Regelquelle gestützt werden.
+ABGELEITET: Technische Entscheidungen des Projekts.
+OFFEN: Noch nicht abschließend geklärte Fragen.
