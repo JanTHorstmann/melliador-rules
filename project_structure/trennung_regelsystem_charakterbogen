@@ -1,0 +1,29 @@
+### Architekturentscheidung – Trennung von Regelsystem und Charakterbogen
+
+**Status:** ABGELEITET – Architekturvorschlag
+
+**Ziel:** Das Melliador-Regelsystem soll unabhängig vom verwendeten Charakterbogen funktionieren.
+
+**Regelsystem**
+- Enthält die Wurflogik und Regelberechnungen.
+- Stellt eine definierte öffentliche Schnittstelle zum Auslösen von Würfen bereit.
+- Ermittelt regelrelevante Werte aus den verfügbaren Charakterdaten.
+- Liefert strukturierte Wurfergebnisse zurück.
+- Enthält keine Abhängigkeit vom konkreten HTML-Layout eines Charakterbogens.
+
+**Charakterbogen**
+- Stellt Charakterdaten und Bedienelemente dar.
+- Löst beim Klick auf eine Probe eine Wurfanforderung aus.
+- Muss die internen Berechnungen des Regelsystems nicht selbst implementieren.
+- Kann das zurückgegebene Ergebnis in einer eigenen Darstellung anzeigen.
+
+**Kompatibilität**
+- Weitere Charakterbögen sollen dieselbe öffentliche Schnittstelle verwenden können.
+- Die Schnittstelle muss dokumentiert und unabhängig von internen Implementierungsdetails sein.
+- Die konkrete technische Form der Schnittstelle wird noch festgelegt.
+
+**Offen**
+- Direkter Funktionsaufruf oder öffentliche Foundry-Schnittstelle.
+- Format der Wurfanforderung.
+- Format des Rückgabewerts.
+- Umgang mit ungültigen oder unvollständigen Angaben.
