@@ -1,0 +1,53 @@
+ARCHITEKTURENTSCHEIDUNG A-001
+
+TITEL
+Trennung von Regelsystem und Charakterbogen
+
+STATUS
+ABGELEITET – Architekturentscheidung getroffen
+
+ENTSCHEIDUNG
+Melliador Rules wird als eigenständiges Regelsystem entwickelt.
+Die Regelberechnung ist nicht an einen bestimmten Charakterbogen
+gebunden.
+
+Melliador Helpers bleibt ein separates Projekt und übernimmt
+die Darstellung der Charakterdaten sowie die Bedienelemente
+zum Auslösen von Aktionen.
+
+SCHNITTSTELLE
+Das Regelsystem stellt eine öffentliche Schnittstelle bereit,
+über die Charakterbögen Wurfaktionen auslösen können.
+
+Die Schnittstelle soll dokumentiert sein und keine Kenntnis
+des internen HTML-Aufbaus eines Charakterbogens voraussetzen.
+
+VERANTWORTLICHKEITEN
+
+Melliador Rules:
+- Regelberechnungen
+- Ermittlung regelrelevanter Werte
+- Würfelmechanik
+- Auswertung von Würfen
+- Strukturierte Rückgabe der Ergebnisse
+
+Charakterbogen:
+- Darstellung der Charakterdaten
+- Bedienelemente für Proben und andere Aktionen
+- Übergabe der Wurfanforderung
+- Darstellung des zurückgegebenen Ergebnisses
+
+Foundry VTT:
+- Plattformfunktionen und Dokumente
+- Bereitstellung der benötigten APIs
+- Integration in die Foundry-Umgebung
+
+NOCH OFFEN
+- Konkrete technische Form der öffentlichen Schnittstelle
+- Format der Wurfanforderung
+- Format der Rückgabewerte
+- Fehlerbehandlung bei ungültigen Anforderungen
+
+BEGRÜNDUNG
+Die Trennung erleichtert Wartung, Tests und die spätere
+Verwendung mit weiteren Charakterbögen.
