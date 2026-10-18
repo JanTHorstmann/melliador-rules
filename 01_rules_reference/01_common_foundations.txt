@@ -1,0 +1,59 @@
+BASISREGELN – WÜRFELMECHANIK
+
+QUELLE
+Melliador-Schnellstarter, Version 1.2
+Gedruckte Seite 24: Basis-Regeln
+
+STATUS
+BELEGT – durch die angegebene Regelquelle
+
+W20
+Der W20 ist ein zwanzigseitiger Würfel und der wichtigste
+Würfel für die beschriebenen Grundmechaniken.
+
+GRUNDPRINZIP
+Wenn eine kritische Situation entschieden werden muss, wird
+ein W20 geworfen. Modifikatoren werden zum Würfelergebnis
+hinzugerechnet. Anschließend wird das Ergebnis mit einem
+Schwierigkeitsgrad (SG) verglichen.
+
+Ein Wurf ist erfolgreich, wenn das Ergebnis den Zielwert
+erreicht oder überschreitet.
+
+DREI WURFARTEN
+
+1. ATTRIBUTSWÜRFE
+Werden für aktive Handlungen eingesetzt, die keine Angriffe
+sind. Beispiele sind Klettern, Schleichen, Spurenlesen und
+Überzeugen.
+
+Der Schwierigkeitsgrad wird von der Spielleitung abhängig
+von der jeweiligen Situation festgelegt.
+
+2. RETTUNGSWÜRFE
+Dienen dazu, äußere Einwirkungen abzuwehren oder ihnen zu
+entgehen. Beispiele sind Feuerbälle, Fallen, Gift, Furcht
+und bestimmte magische Beeinflussungen.
+
+Der Schwierigkeitsgrad ergibt sich aus der Quelle der Gefahr.
+
+3. ANGRIFFSWÜRFE
+Dienen dazu, ein Ziel im Nah- oder Fernkampf zu treffen
+und zu verletzen.
+
+Der Zielwert eines Angriffs ist die Rüstungsklasse (RK)
+des Ziels.
+
+SCHWIERIGKEITSGRADE FÜR ATTRIBUTSWÜRFE
+
+Sehr leicht:       5
+Leicht:           10
+Mittel:           15
+Schwer:           20
+Sehr schwer:      25
+Nahezu unmöglich: 30
+
+ABGRENZUNG
+Diese Datei dokumentiert die belegten Grundlagen. Die genaue
+technische Umsetzung, Eingabeparameter und Rückgabestruktur
+werden in den Regelspezifikationen festgelegt.
