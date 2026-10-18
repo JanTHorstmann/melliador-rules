@@ -1,0 +1,31 @@
+ABHÄNGIGKEITEN
+
+STATUS
+IN BEARBEITUNG
+
+GRUNDSATZ
+Abhängigkeiten sollen nur dann aufgenommen werden, wenn
+sie für eine konkrete Aufgabe benötigt werden.
+
+PLATTFORM
+Foundry VTT stellt die Laufzeitumgebung für die spätere
+Integration bereit.
+
+REGELSYSTEM
+Melliador Rules soll keine Abhängigkeit vom D&D-5e-System
+besitzen.
+
+CHARAKTERBOGEN
+Melliador Helpers bleibt ein separates Projekt.
+Der Regelkern soll nicht direkt von dessen internen
+Klassen, Templates oder CSS abhängen.
+
+TESTUMGEBUNG
+Die Regelberechnungen sollen unabhängig von einer laufenden
+Foundry-Instanz getestet werden können, soweit dies für
+die jeweilige Funktion möglich ist.
+
+OFFEN
+Die konkrete Liste technischer Paketabhängigkeiten wird
+festgelegt, sobald Quellcode und Testumgebung aufgebaut
+werden.
