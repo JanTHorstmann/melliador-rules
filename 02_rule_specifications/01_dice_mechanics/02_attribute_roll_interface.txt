@@ -1,0 +1,58 @@
+SCHNITTSTELLENSPEZIFIKATION – ATTRIBUTSWURF
+
+STATUS
+ENTWURF – noch nicht implementiert
+
+ZIEL
+Ein Charakterbogen soll einen Attributswurf auslösen können,
+ohne die interne Regelberechnung selbst implementieren
+zu müssen.
+
+VORGESEHENER EINSTIEGSPUNKT
+requestAttributeRoll()
+
+VORGESEHENE EINGABEN
+
+actorId:
+Identifiziert den würfelnden Charakter.
+
+attributeId:
+Identifiziert das für den Wurf verwendete Attribut.
+
+VERARBEITUNG
+1. Wurfanforderung prüfen.
+2. Benötigte Charakterdaten ermitteln.
+3. Regelrelevante Modifikatoren bestimmen.
+4. Benötigten Zielwert ermitteln oder entgegennehmen.
+5. rollAttribute() ausführen.
+6. Ergebnis strukturiert zurückgeben.
+
+RÜCKGABE
+Die endgültige Rückgabestruktur wird vor der Implementierung
+festgelegt.
+
+VORGESEHENE ERGEBNISINFORMATIONEN
+- Wurfart
+- Charakterkennung
+- Attributkennung
+- W20-Ergebnis
+- Gesamtmodifikator
+- Zielwert
+- Gesamtergebnis
+- Erfolg oder Misserfolg
+
+ARCHITEKTURGRUNDSÄTZE
+- Die Schnittstelle ist unabhängig vom HTML-Aufbau des
+  Charakterbogens.
+- Die Regelberechnung ist unabhängig von Foundry-APIs.
+- Der Charakterbogen soll keine konkurrierende Berechnung
+  der Melliador-Regeln durchführen müssen.
+- Fehlende Pflichtdaten dürfen nicht stillschweigend durch
+  0 ersetzt werden.
+
+OFFEN
+- Endgültige Funktionssignatur
+- Technische Veröffentlichung über Foundry
+- Herkunft des Schwierigkeitsgrads
+- Zusammensetzung der Modifikatoren
+- Fehler- und Rückgabeverhalten
