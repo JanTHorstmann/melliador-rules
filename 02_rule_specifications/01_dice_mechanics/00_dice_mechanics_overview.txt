@@ -1,0 +1,93 @@
+REGELSPEZIFIKATION – WÜRFELMECHANIK
+
+STATUS
+TEILWEISE FESTGELEGT
+
+ZIEL
+Eine gemeinsame Würfelfunktion und getrennte Wurffunktionen
+für die verschiedenen Arten von Würfen bereitstellen.
+
+1. rollD20()
+
+STATUS: ABGELEITET – Architekturentscheidung
+
+AUFGABE
+Erzeugt einen W20-Wurf und gibt dessen Ergebnis zurück.
+
+EINGABEN
+Keine.
+
+RÜCKGABE
+Eine zufällig erzeugte ganze Zahl von 1 bis einschließlich 20.
+
+ABGRENZUNG
+- Keine Modifikatorberechnung
+- Keine Ermittlung eines Zielwerts
+- Keine Bewertung von Erfolg oder Misserfolg
+- Keine Abhängigkeit von einer bestimmten Wurfart
+
+2. rollAttribute()
+
+STATUS: ENTWURF
+
+AUFGABE
+Führt die Berechnung eines Attributswurfs aus.
+
+GRUNDPRINZIP
+Würfelwert plus anwendbarer Gesamtmodifikator werden mit
+dem Schwierigkeitsgrad verglichen.
+
+3. rollSaving()
+
+STATUS: ENTWURF
+
+AUFGABE
+Führt die Berechnung eines Rettungswurfs aus.
+
+GRUNDPRINZIP
+Würfelwert plus anwendbarer Gesamtmodifikator werden mit
+dem vorgegebenen Schwierigkeitsgrad verglichen.
+
+4. rollAttack()
+
+STATUS: ENTWURF
+
+AUFGABE
+Führt die Berechnung eines Angriffswurfs aus.
+
+GRUNDPRINZIP
+Würfelwert plus anwendbarer Gesamtmodifikator werden mit
+der Rüstungsklasse des Ziels verglichen.
+
+GEMEINSAME RÜCKGABESTRUKTUR
+
+dieResult:
+Der gewürfelte W20-Wert.
+
+modifier:
+Der tatsächlich angewendete Gesamtmodifikator.
+
+target:
+Der verwendete Zielwert, also SG oder RK.
+
+total:
+Würfelwert plus Gesamtmodifikator.
+
+success:
+Das Ergebnis der Erfolgsprüfung.
+
+ERFOLGSPRÜFUNG
+Ein Wurf ist erfolgreich, wenn total >= target gilt,
+sofern keine abweichende Sonderregel greift.
+
+WICHTIGE ABGRENZUNG
+Die allgemeine Erfolgsprüfung ist durch die Basisregel belegt.
+Ob und welche Sonderregeln davon abweichen, ist gesondert
+anhand des Regelwerks zu prüfen.
+
+OFFEN
+- Zusammensetzung der Modifikatoren
+- Ermittlung der Modifikatoren aus Charakterdaten
+- Umgang mit kritischen Ergebnissen
+- Umgang mit ungültigen Eingaben
+- Vollständige Rückgabestruktur
