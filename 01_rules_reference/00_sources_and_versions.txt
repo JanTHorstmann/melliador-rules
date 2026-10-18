@@ -1,0 +1,22 @@
+REGELQUELLEN
+
+HAUPTQUELLE
+Melliador-Schnellstarter, Version 1.2
+Dateiname: Melliador_Schnellstarter_1_2__261002.pdf
+
+VERWENDUNG
+Die offizielle Regelquelle ist maßgeblich für die fachliche
+Umsetzung der Melliador-Regeln.
+
+GRUNDSATZ
+Regelbehauptungen müssen auf eine konkrete Quelle zurückführbar
+sein. Wenn eine Regel nicht eindeutig aus der Quelle hervorgeht,
+wird sie als OFFEN dokumentiert.
+
+ÄNDERUNGEN
+Bei einer neuen Regelversion muss geprüft werden, welche bereits
+dokumentierten Regeln, Spezifikationen und Tests betroffen sind.
+
+WICHTIG
+Technische Annahmen dürfen nicht als offizielle Spielregeln
+dargestellt werden.
