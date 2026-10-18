@@ -1,0 +1,36 @@
+TECHNOLOGIEENTSCHEIDUNGEN
+
+STATUS
+ABGELEITET – bisherige Projektentscheidung
+
+PROGRAMMIERSPRACHE
+JavaScript
+
+MODULSYSTEM
+ES-Module
+
+PLATTFORM
+Foundry Virtual Tabletop
+
+OBERFLÄCHENTECHNOLOGIEN
+HTML und CSS, sofern für die Integration erforderlich.
+
+DATENFORMAT
+JSON für geeignete statische Regeldaten.
+
+TESTS
+Automatisierte Tests für fachliche Berechnungen.
+
+ARCHITEKTURPRINZIP
+Der fachliche Regelkern soll möglichst ohne Abhängigkeit
+von Foundry-spezifischen APIs funktionieren.
+
+Foundry-spezifische Funktionen werden in einem separaten
+Integrationsbereich gekapselt.
+
+NICHT FESTGELEGT
+- Testframework
+- Build-System
+- Paketverwaltung und konkrete Abhängigkeiten
+- Vollständige Verzeichnisstruktur des Quellcodes
+- Veröffentlichungs- und Installationsverfahren
