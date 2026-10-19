@@ -11,3 +11,13 @@ Testwaffe: Dolch
 Schadenswürfel              1W4
 Attribut für den Angriff    Geschicklichkeit
 Geübt                       Ja
+
+Beispieltest: Angriffsbonus berechnen
+
+Geschicklichkeitsmodifikator +3 plus Übungsbonus +2 ergibt +5.
+
+Ein fest vorgegebenes Würfelergebnis von 12 ergibt damit einen Gesamtwurf von 17.
+
+Die Beispielwerte orientieren sich an Nandora im Schnellstarter. Der Test prüft zunächst nur die Bonusberechnung und den Gesamtwurf – noch nicht den vollständigen Angriff oder dessen Auswirkungen.
+
+### Wir legen außerdem Testfälle für ungültige Daten, fehlende Pflichtwerte, kritische Würfe, Vorteil und Nachteil sowie Grenzwerte an, sobald die zugehörigen Regeln fachlich dokumentiert sind. ###

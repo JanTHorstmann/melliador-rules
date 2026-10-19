@@ -1,0 +1,20 @@
+- Phase 1: Modulstruktur festlegen
+    Basisregeln mit Unterregeln, danach Kampf, Schaden/Heilung, Charaktere, Ausrüstung, Zauberei und Sonderregeln.
+
+- Phase 2: Regeln und Abhängigkeiten katalogisieren
+    Jede Regel erhält eine ID, Quelle, Eingaben, Berechnung, Ergebnis und Abhängigkeiten.
+
+- Phase 3: Foundry-Dokumentation prüfen
+    Systemaufbau, Datenmodelle, Dokumente, Speichern, Würfel und API Version 14.
+
+- Phase 4: Technische Architektur festlegen
+    Eigenständiger JavaScript-Regelkern, Foundry-Adapter, Datenverträge und Teststrategie.
+
+- Phase 5: Dummy-Daten und Tests aufbauen
+    Testcharaktere, Waffen, Zauber und reproduzierbare Würfelergebnisse.
+
+- Phase 6: Regeln schrittweise programmieren
+    Mit den Basisregeln beginnen und erst danach abhängige Fachregeln implementieren.
+
+- Phase 7: Foundry und Helpers integrieren
+    Schnittstelle stabilisieren, echte Charakterdaten verwenden und Gesamtabläufe testen.
