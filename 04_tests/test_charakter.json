@@ -1,0 +1,1588 @@
+{
+  "name": "Melliador Test",
+  "type": "character",
+  "img": "systems/dnd5e/icons/svg/actors/character.svg",
+  "system": {
+    "currency": {
+      "pp": 0,
+      "gp": 0,
+      "ep": 0,
+      "sp": 0,
+      "cp": 0
+    },
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0,
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "dex": {
+        "value": 14,
+        "proficient": 0,
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0,
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "int": {
+        "value": 8,
+        "proficient": 0,
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      },
+      "cha": {
+        "value": 9,
+        "proficient": 0,
+        "max": null,
+        "check": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "save": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        },
+        "attack": {
+          "roll": {
+            "min": null,
+            "max": null,
+            "mode": 0
+          }
+        }
+      }
+    },
+    "bonuses": {
+      "spell": {
+        "dc": ""
+      }
+    },
+    "skills": {
+      "acr": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "ani": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "arc": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "ath": {
+        "ability": "str",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "dec": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "his": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "ins": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "itm": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "inv": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "med": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "nat": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "prc": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "prf": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "per": {
+        "ability": "cha",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "rel": {
+        "ability": "int",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "slt": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "ste": {
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 1,
+        "bonuses": {
+          "passive": ""
+        }
+      },
+      "sur": {
+        "ability": "wis",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "value": 0,
+        "bonuses": {
+          "passive": ""
+        }
+      }
+    },
+    "tools": {
+      "thief": {
+        "value": 1,
+        "ability": "dex",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      }
+    },
+    "spells": {
+      "spell1": {
+        "value": 0,
+        "override": null
+      },
+      "spell2": {
+        "value": 0,
+        "override": null
+      },
+      "spell3": {
+        "value": 0,
+        "override": null
+      },
+      "spell4": {
+        "value": 0,
+        "override": null
+      },
+      "spell5": {
+        "value": 0,
+        "override": null
+      },
+      "spell6": {
+        "value": 0,
+        "override": null
+      },
+      "spell7": {
+        "value": 0,
+        "override": null
+      },
+      "spell8": {
+        "value": 0,
+        "override": null
+      },
+      "spell9": {
+        "value": 0,
+        "override": null
+      },
+      "pact": {
+        "value": 0,
+        "override": null
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": null,
+        "calcs": [
+          "unarmored",
+          "armored"
+        ],
+        "formulas": [],
+        "override": null
+      },
+      "init": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        }
+      },
+      "movement": {
+        "units": null,
+        "hover": false,
+        "ignoredDifficultTerrain": [],
+        "speeds": {}
+      },
+      "attunement": {
+        "max": 3
+      },
+      "senses": {
+        "ranges": {
+          "blindsight": null,
+          "darkvision": null,
+          "tremorsense": null,
+          "truesight": null
+        },
+        "units": null,
+        "special": ""
+      },
+      "spellcasting": "",
+      "exhaustion": 0,
+      "concentration": {
+        "ability": "",
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "limit": 1
+      },
+      "loyalty": {},
+      "hp": {
+        "max": null,
+        "temp": null,
+        "tempmax": 0,
+        "value": 0,
+        "bonuses": {}
+      },
+      "death": {
+        "roll": {
+          "min": null,
+          "max": null,
+          "mode": 0
+        },
+        "success": 0,
+        "failure": 0
+      },
+      "inspiration": false,
+      "piety": {
+        "value": null
+      }
+    },
+    "bastion": {
+      "name": "",
+      "description": ""
+    },
+    "details": {
+      "biography": {
+        "value": "",
+        "public": ""
+      },
+      "alignment": "",
+      "ideal": "",
+      "bond": "",
+      "flaw": "",
+      "race": "8swqjB2um0AoKrbD",
+      "background": "XZNSldwmLkRuKmDK",
+      "originalClass": "",
+      "xp": {
+        "value": 0
+      },
+      "appearance": "",
+      "trait": "",
+      "eyes": "",
+      "height": "",
+      "faith": "",
+      "hair": "",
+      "weight": "",
+      "gender": "",
+      "skin": "",
+      "age": ""
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": "",
+        "bypasses": []
+      },
+      "dr": {
+        "value": [
+          "fire"
+        ],
+        "custom": "",
+        "bypasses": []
+      },
+      "dv": {
+        "value": [],
+        "custom": "",
+        "bypasses": []
+      },
+      "dm": {
+        "amount": {},
+        "bypasses": []
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common",
+          "dwarvish",
+          "gnomish"
+        ],
+        "custom": "",
+        "communication": {}
+      },
+      "weaponProf": {
+        "value": [],
+        "custom": "",
+        "mastery": {
+          "value": [],
+          "bonus": []
+        }
+      },
+      "armorProf": {
+        "value": [],
+        "custom": ""
+      }
+    },
+    "resources": {
+      "primary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "secondary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      },
+      "tertiary": {
+        "value": 0,
+        "max": 0,
+        "sr": false,
+        "lr": false,
+        "label": ""
+      }
+    },
+    "favorites": [],
+    "identifier": "",
+    "rolls": {}
+  },
+  "prototypeToken": {
+    "name": "Player Character",
+    "displayName": 0,
+    "actorLink": true,
+    "width": 1,
+    "height": 1,
+    "depth": 1,
+    "texture": {
+      "src": "systems/dnd5e/icons/svg/actors/character.svg",
+      "anchorX": 0.5,
+      "anchorY": 0.5,
+      "fit": "contain",
+      "scaleX": 1,
+      "scaleY": 1,
+      "tint": "#ffffff",
+      "alphaThreshold": 0.75
+    },
+    "lockRotation": false,
+    "rotation": 0,
+    "alpha": 1,
+    "disposition": 1,
+    "displayBars": 0,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "bar2": {
+      "attribute": null
+    },
+    "light": {
+      "negative": false,
+      "priority": 0,
+      "alpha": 0.5,
+      "angle": 360,
+      "bright": 0,
+      "color": null,
+      "coloration": 1,
+      "dim": 0,
+      "attenuation": 0.5,
+      "luminosity": 0.5,
+      "saturation": 0,
+      "contrast": 0,
+      "shadows": 0,
+      "animation": {
+        "type": null,
+        "speed": 5,
+        "intensity": 5,
+        "reverse": false
+      },
+      "darkness": {
+        "min": 0,
+        "max": 1
+      }
+    },
+    "sight": {
+      "enabled": true,
+      "range": 0,
+      "angle": 360,
+      "visionMode": "basic",
+      "color": null,
+      "attenuation": 0.1,
+      "brightness": 0,
+      "saturation": 0,
+      "contrast": 0
+    },
+    "detectionModes": {},
+    "occludable": {
+      "radius": 0
+    },
+    "ring": {
+      "enabled": false,
+      "colors": {
+        "ring": null,
+        "background": null
+      },
+      "effects": 1,
+      "subject": {
+        "scale": 1,
+        "texture": null
+      }
+    },
+    "turnMarker": {
+      "mode": 1,
+      "animation": null,
+      "src": null,
+      "disposition": false
+    },
+    "movementAction": null,
+    "flags": {},
+    "randomImg": false,
+    "appendNumber": false,
+    "prependAdjective": false
+  },
+  "items": [
+    {
+      "name": "Dragonborn",
+      "system": {
+        "description": {
+          "value": "<p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspDragonborn0 inline classes=\"free-rules-embed\"]</p><h3 data-anchor=\"dragonborn-traits\">Dragonborn Traits</h3><p><strong>Creature Type: </strong>Humanoid</p><p><strong>Size: </strong>Medium (about 5–7 feet tall)</p><p><strong>Speed:</strong> 30 feet</p><p>As a Dragonborn, you have these special traits.</p><p><strong>Draconic Ancestry.</strong> Your lineage stems from a dragon progenitor. Choose the kind of dragon from the Draconic Ancestors table. Your choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.</p><table><caption>Draconic Ancestors</caption><thead><tr><td>Dragon</td><td>Damage Type</td><td>Dragon</td><td>Damage Type</td></tr></thead><tbody><tr><td>Black</td><td>Acid</td><td>Gold</td><td>Fire</td></tr><tr><td>Blue</td><td>Lightning</td><td>Green</td><td>Poison</td></tr><tr><td>Brass</td><td>Fire</td><td>Red</td><td>Fire</td></tr><tr><td>Bronze</td><td>Lightning</td><td>Silver</td><td>Cold</td></tr><tr><td>Copper</td><td>Acid</td><td>White</td><td>Cold</td></tr></tbody></table><p><strong>Breath Weapon.</strong> When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><p><strong>Damage Resistance. </strong>You have Resistance to the damage type determined by your Draconic Ancestry trait.</p><p><strong>Darkvision. </strong>You have Darkvision with a range of 60 feet.</p><p><strong>Draconic Flight.</strong> When you reach character level 5, you can channel draconic magic to give yourself temporary flight. As a Bonus Action, you sprout spectral wings on your back that last for 10 minutes or until you retract the wings (no action required) or have the Incapacitated condition. During that time, you have a Fly Speed equal to your Speed. Your wings appear to be made of the same energy as your Breath Weapon. Once you use this trait, you can't use it again until you finish a Long Rest.</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "book": "",
+          "license": "CC-BY-4.0"
+        },
+        "advancement": {
+          "65BqBxGcj6z4S803": {
+            "_id": "65BqBxGcj6z4S803",
+            "type": "Size",
+            "configuration": {
+              "sizes": [
+                "med"
+              ]
+            },
+            "level": 0,
+            "hint": "Medium (about 5–7 feet tall)",
+            "value": {},
+            "flags": {},
+            "name": ""
+          },
+          "XA1fKbmfBiCHnVzs": {
+            "_id": "XA1fKbmfBiCHnVzs",
+            "type": "ScaleValue",
+            "configuration": {
+              "identifier": "breath",
+              "type": "dice",
+              "distance": {
+                "units": ""
+              },
+              "scale": {
+                "0": {
+                  "number": 1,
+                  "faces": 10,
+                  "modifiers": []
+                },
+                "5": {
+                  "number": 2,
+                  "faces": 10,
+                  "modifiers": []
+                },
+                "11": {
+                  "number": 3,
+                  "faces": 10,
+                  "modifiers": []
+                },
+                "17": {
+                  "number": 4,
+                  "faces": 10,
+                  "modifiers": []
+                }
+              }
+            },
+            "value": {},
+            "hint": "",
+            "flags": {},
+            "name": "Breath Weapon"
+          },
+          "raWgGHnxSicEwTb9": {
+            "_id": "raWgGHnxSicEwTb9",
+            "type": "ItemGrant",
+            "configuration": {
+              "items": [
+                {
+                  "optional": false,
+                  "uuid": "Compendium.dnd5e.origins24.Item.phbsptBreathWeap",
+                  "sort": 0
+                }
+              ],
+              "optional": false,
+              "spell": null,
+              "sorting": "m"
+            },
+            "value": {
+              "added": {
+                "gqihz8TQvDzYENJi": "Compendium.dnd5e.origins24.Item.phbsptBreathWeap"
+              }
+            },
+            "level": 0,
+            "hint": "",
+            "flags": {},
+            "name": "Draconic Ancestry"
+          },
+          "8maGZKJ9TOIgNR80": {
+            "_id": "8maGZKJ9TOIgNR80",
+            "type": "Trait",
+            "configuration": {
+              "mode": "default",
+              "allowReplacements": false,
+              "grants": [],
+              "choices": [
+                {
+                  "count": 1,
+                  "pool": [
+                    "dr:acid",
+                    "dr:cold",
+                    "dr:fire",
+                    "dr:lightning",
+                    "dr:poison"
+                  ]
+                }
+              ]
+            },
+            "value": {
+              "chosen": [
+                "dr:fire"
+              ]
+            },
+            "level": 0,
+            "hint": "You have Resistance to the damage type determined by your Draconic Ancestry trait.",
+            "flags": {},
+            "name": "Damage Resistance"
+          },
+          "jOGAWKkPIAbshOpo": {
+            "_id": "jOGAWKkPIAbshOpo",
+            "type": "ItemGrant",
+            "configuration": {
+              "items": [
+                {
+                  "uuid": "Compendium.dnd5e.origins24.Item.phbsptDraconicFl",
+                  "optional": false,
+                  "sort": 0
+                }
+              ],
+              "optional": false,
+              "spell": null,
+              "sorting": "m"
+            },
+            "value": {},
+            "level": 5,
+            "hint": "",
+            "flags": {},
+            "name": "Draconic Flight"
+          }
+        },
+        "movement": {
+          "units": null,
+          "hover": false,
+          "ignoredDifficultTerrain": [],
+          "speeds": {
+            "walk": "30"
+          }
+        },
+        "senses": {
+          "units": null,
+          "special": "",
+          "ranges": {
+            "darkvision": 60,
+            "blindsight": null,
+            "tremorsense": null,
+            "truesight": null
+          }
+        },
+        "type": {
+          "value": "humanoid",
+          "custom": "",
+          "subtype": "Dragonborn"
+        },
+        "identifier": "dragonborn"
+      },
+      "_id": "8swqjB2um0AoKrbD",
+      "type": "race",
+      "img": "icons/creatures/eyes/lizard-single-slit-green.webp",
+      "effects": [],
+      "folder": "Ulvo8nbygUegLa59",
+      "flags": {},
+      "_stats": {
+        "duplicateSource": null,
+        "coreVersion": "14.359",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1789905822277,
+        "modifiedTime": 1789905822277,
+        "lastModifiedBy": "JrGDYxgwHCutOUKC",
+        "exportSource": null,
+        "compendiumSource": "Compendium.dnd5e.origins24.Item.phbspDragonborn0"
+      },
+      "ownership": {
+        "default": 0,
+        "JrGDYxgwHCutOUKC": 3
+      },
+      "sort": 0
+    },
+    {
+      "_id": "gqihz8TQvDzYENJi",
+      "name": "Breath Weapon",
+      "type": "feat",
+      "img": "icons/creatures/reptiles/lizard-mouth-glowing-red.webp",
+      "system": {
+        "activities": {
+          "dxCRYmNSSGp6L2yh": {
+            "type": "save",
+            "name": "Breath Weapon (Cone)",
+            "_id": "dxCRYmNSSGp6L2yh",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": false,
+              "condition": ""
+            },
+            "consumption": {
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true,
+              "targets": [
+                {
+                  "type": "itemUses",
+                  "value": "1",
+                  "target": "",
+                  "scaling": {}
+                }
+              ]
+            },
+            "description": {
+              "chatFlavor": "",
+              "value": ""
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false,
+              "expiry": null
+            },
+            "effects": [],
+            "range": {
+              "override": false,
+              "units": "self",
+              "special": ""
+            },
+            "target": {
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "type": "cone",
+                "size": "15",
+                "count": "",
+                "stationary": false
+              },
+              "affects": {
+                "choice": false,
+                "count": "",
+                "type": "creature",
+                "special": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "@scale.dragonborn.breath"
+                  },
+                  "number": null,
+                  "denomination": 0,
+                  "bonus": "",
+                  "types": [
+                    "acid",
+                    "cold",
+                    "fire",
+                    "poison",
+                    "lightning"
+                  ],
+                  "scaling": {
+                    "number": 1
+                  },
+                  "modifiers": []
+                }
+              ],
+              "onSave": "half"
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "con",
+                "formula": ""
+              },
+              "visible": true
+            },
+            "img": null,
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": []
+          },
+          "iyK44COq6gbdbkc2": {
+            "type": "save",
+            "name": "Breath Weapon (Line)",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": null,
+              "override": false,
+              "condition": ""
+            },
+            "consumption": {
+              "scaling": {
+                "allowed": false
+              },
+              "spellSlot": true,
+              "targets": [
+                {
+                  "type": "itemUses",
+                  "value": "1",
+                  "target": "",
+                  "scaling": {}
+                }
+              ]
+            },
+            "description": {
+              "chatFlavor": "",
+              "value": ""
+            },
+            "duration": {
+              "units": "inst",
+              "concentration": false,
+              "override": false,
+              "expiry": null
+            },
+            "effects": [],
+            "range": {
+              "override": false,
+              "units": "self",
+              "special": ""
+            },
+            "target": {
+              "template": {
+                "contiguous": false,
+                "units": "ft",
+                "count": "",
+                "type": "line",
+                "size": "30",
+                "width": "5",
+                "stationary": false
+              },
+              "affects": {
+                "choice": false,
+                "count": "",
+                "type": "creature",
+                "special": ""
+              },
+              "override": false,
+              "prompt": true
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "damage": {
+              "parts": [
+                {
+                  "custom": {
+                    "enabled": true,
+                    "formula": "@scale.dragonborn.breath"
+                  },
+                  "number": null,
+                  "denomination": 0,
+                  "bonus": "",
+                  "types": [
+                    "acid",
+                    "cold",
+                    "fire",
+                    "poison",
+                    "lightning"
+                  ],
+                  "scaling": {
+                    "number": 1
+                  },
+                  "modifiers": []
+                }
+              ],
+              "onSave": "half"
+            },
+            "save": {
+              "ability": [
+                "dex"
+              ],
+              "dc": {
+                "calculation": "con",
+                "formula": ""
+              },
+              "visible": true
+            },
+            "_id": "iyK44COq6gbdbkc2",
+            "img": null,
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "behaviors": []
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ],
+          "max": "@prof"
+        },
+        "description": {
+          "value": "<p>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17 (4d10).You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-iuhfGfxgl8GeYWBf\"><p><strong>Foundry Note</strong></p><p>The <strong>Breath Weapon (Cone)</strong> and <strong>Breath Weapon (Line)</strong> activities are both configured for their template type and include each type of damage. The damage also scales as you level up.</p><p>You can select the damage type in the damage roll's dialog box. It will remember your damage choice afterwards. You can edit the activities to remove the other damage types to skip this.</p></section>",
+          "chat": ""
+        },
+        "source": {
+          "revision": 1,
+          "rules": "2024",
+          "book": "",
+          "license": "CC-BY-4.0"
+        },
+        "enchant": {},
+        "type": {
+          "value": "race",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [
+          "mgc"
+        ],
+        "requirements": "Dragonborn",
+        "identifier": "breath-weapon",
+        "advancement": {},
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "folder": "2Bw096HjE0HyGMwM",
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "sourceId": "Compendium.dnd5e.origins24.Item.phbsptBreathWeap",
+          "advancementOrigin": "8swqjB2um0AoKrbD.raWgGHnxSicEwTb9",
+          "advancementRoot": "8swqjB2um0AoKrbD.raWgGHnxSicEwTb9",
+          "-=riders": null,
+          "last": {
+            "dxCRYmNSSGp6L2yh": {
+              "damageType": {
+                "0": "acid"
+              }
+            }
+          }
+        }
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "coreVersion": "14.359",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1789905822278,
+        "modifiedTime": 1789905950046,
+        "lastModifiedBy": "JrGDYxgwHCutOUKC",
+        "exportSource": null,
+        "compendiumSource": "Compendium.dnd5e.origins24.Item.phbsptBreathWeap"
+      },
+      "sort": 700000,
+      "ownership": {
+        "default": 0,
+        "JrGDYxgwHCutOUKC": 3
+      }
+    },
+    {
+      "name": "Criminal",
+      "system": {
+        "description": {
+          "value": "<p><strong>Ability Scores:</strong> Dexterity, Constitution, Intelligence</p><p><strong>Feat:</strong> @UUID[Compendium.dnd5e.feats24.Item.phbftAlert000000]{Alert}</p><p><strong>Skill Proficiencies:</strong> Sleight of Hand and Stealth</p><p><strong>Tool Proficiency:</strong> Thieves' Tools</p><p><strong>Equipment:</strong> <em>Choose A or B:</em> (A) 2 @UUID[Compendium.dnd5e.equipment24.Item.phbwepDagger0000]{Daggers}, @UUID[Compendium.dnd5e.equipment24.Item.phbtulThievesToo]{Thieves' Tools}, @UUID[Compendium.dnd5e.equipment24.Item.phbagCrowbar0000]{Crowbar}, 2 @UUID[Compendium.dnd5e.equipment24.Item.phbagPouch000000]{Pouches}, @UUID[Compendium.dnd5e.items.Item.SsAmWV6YBqeOFihT]{Traveler's Clothes}, 16 GP; or (B) 50 GP</p><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixBackg.JournalEntryPage.phbbgCriminal000 inline classes=\"free-rules-embed\"]</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 1,
+          "license": "CC-BY-4.0",
+          "book": "SRD 5.2"
+        },
+        "startingEquipment": [
+          {
+            "type": "AND",
+            "requiresProficiency": false,
+            "_id": "FIqxCvfdb4YPaDyl",
+            "group": "",
+            "sort": 100000
+          },
+          {
+            "type": "linked",
+            "count": 2,
+            "key": "Compendium.dnd5e.equipment24.Item.phbwepDagger0000",
+            "requiresProficiency": false,
+            "_id": "7B991PQwtEPst2lm",
+            "group": "FIqxCvfdb4YPaDyl",
+            "sort": 200000
+          },
+          {
+            "type": "linked",
+            "count": null,
+            "key": "Compendium.dnd5e.equipment24.Item.phbtulThievesToo",
+            "requiresProficiency": false,
+            "_id": "AlpgDfVKgcYd5rLC",
+            "group": "FIqxCvfdb4YPaDyl",
+            "sort": 300000
+          },
+          {
+            "type": "linked",
+            "count": null,
+            "key": "Compendium.dnd5e.equipment24.Item.phbagCrowbar0000",
+            "requiresProficiency": false,
+            "_id": "8PuRM4pC5hnCsIxs",
+            "group": "FIqxCvfdb4YPaDyl",
+            "sort": 400000
+          },
+          {
+            "type": "linked",
+            "count": 2,
+            "key": "Compendium.dnd5e.equipment24.Item.phbagPouch000000",
+            "requiresProficiency": false,
+            "_id": "mp0feeLVQbHaU276",
+            "group": "FIqxCvfdb4YPaDyl",
+            "sort": 500000
+          },
+          {
+            "type": "linked",
+            "count": null,
+            "key": "Compendium.dnd5e.equipment24.Item.phbagClothesTrav",
+            "requiresProficiency": false,
+            "_id": "2txtXcXiPUM87Yb7",
+            "group": "FIqxCvfdb4YPaDyl",
+            "sort": 600000
+          }
+        ],
+        "identifier": "criminal",
+        "advancement": {
+          "8gFHAigaFboVUSgH": {
+            "_id": "8gFHAigaFboVUSgH",
+            "type": "AbilityScoreImprovement",
+            "configuration": {
+              "cap": 2,
+              "fixed": {
+                "str": 0,
+                "dex": 0,
+                "con": 0,
+                "int": 0,
+                "wis": 0,
+                "cha": 0
+              },
+              "locked": [
+                "str",
+                "wis",
+                "cha"
+              ],
+              "points": 3,
+              "recommendation": null
+            },
+            "value": {
+              "type": "asi",
+              "assignments": {
+                "dex": 2,
+                "con": 1
+              }
+            },
+            "level": 0,
+            "hint": "Your background allows you to increase your Dexterity, Constitution, and Charisma scores; increase one of them by 2 and a different one by 1, or increase all three by 1. None of these increases can raise a score above 20.",
+            "flags": {},
+            "name": "Background Ability Score Improvement"
+          },
+          "WJA48TLxfqlc3ygz": {
+            "_id": "WJA48TLxfqlc3ygz",
+            "type": "ItemGrant",
+            "configuration": {
+              "items": [
+                {
+                  "optional": false,
+                  "uuid": "Compendium.dnd5e.feats24.Item.phbftAlert000000",
+                  "sort": 0
+                }
+              ],
+              "optional": false,
+              "spell": null,
+              "sorting": "m"
+            },
+            "value": {
+              "added": {
+                "BP3AvL4QpsZ4yyeI": "Compendium.dnd5e.feats24.Item.phbftAlert000000"
+              }
+            },
+            "level": 0,
+            "hint": "Your backgrounds you the Alert feat.",
+            "flags": {},
+            "name": "Background Feat"
+          },
+          "CdiCt0Cr9bP9FQNO": {
+            "_id": "CdiCt0Cr9bP9FQNO",
+            "type": "Trait",
+            "configuration": {
+              "mode": "default",
+              "allowReplacements": false,
+              "grants": [
+                "tool:thief",
+                "skills:slt",
+                "skills:ste"
+              ],
+              "choices": [
+                {
+                  "count": 1,
+                  "pool": []
+                }
+              ]
+            },
+            "value": {
+              "chosen": [
+                "tool:thief",
+                "skills:slt",
+                "skills:ste"
+              ]
+            },
+            "level": 0,
+            "hint": "Your background grants you proficiency in Sleight of Hand and Stealth. It also grants you proficiency with Thieves' Tools.",
+            "flags": {},
+            "name": "Background Proficiencies"
+          },
+          "pLGiyOjTP7nwuwTl": {
+            "_id": "pLGiyOjTP7nwuwTl",
+            "type": "Trait",
+            "configuration": {
+              "mode": "default",
+              "allowReplacements": false,
+              "grants": [
+                "languages:standard:common"
+              ],
+              "choices": [
+                {
+                  "count": 2,
+                  "pool": [
+                    "languages:standard:*"
+                  ]
+                }
+              ]
+            },
+            "value": {
+              "chosen": [
+                "languages:standard:common",
+                "languages:standard:dwarvish",
+                "languages:standard:gnomish"
+              ]
+            },
+            "level": 0,
+            "hint": "Your character knows at least three languages: Common plus two languages you roll or choose from the Standard Languages table.",
+            "flags": {},
+            "name": "Choose Languages"
+          }
+        },
+        "wealth": "50"
+      },
+      "_id": "XZNSldwmLkRuKmDK",
+      "type": "background",
+      "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+      "effects": [],
+      "folder": "ysJSs3cbEBOMC1zV",
+      "flags": {},
+      "_stats": {
+        "duplicateSource": null,
+        "coreVersion": "14.359",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1789905822265,
+        "modifiedTime": 1789905822265,
+        "lastModifiedBy": "JrGDYxgwHCutOUKC",
+        "exportSource": null,
+        "compendiumSource": "Compendium.dnd5e.origins24.Item.phbbgCriminal000"
+      },
+      "ownership": {
+        "default": 0,
+        "JrGDYxgwHCutOUKC": 3
+      },
+      "sort": 0
+    },
+    {
+      "name": "Alert",
+      "system": {
+        "description": {
+          "value": "<p>You gain the following benefits.</p><p><strong>Initiative Proficiency.</strong> When you roll Initiative, you can add your Proficiency Bonus to the roll.</p><p><strong>Initiative Swap.</strong> Immediately after you roll Initiative, you can swap your Initiative with the Initiative of one willing ally in the same combat. You can't make this swap if you or the ally has the &amp;Reference[Incapacitated] condition.</p><section id=\"secret-yzfXk3D5M1jv9ixH\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature automatically includes the bonus to your Initiative.</p></section>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "revision": 2,
+          "license": "CC-BY-4.0",
+          "book": ""
+        },
+        "uses": {
+          "max": "",
+          "spent": 0,
+          "recovery": []
+        },
+        "type": {
+          "value": "feat",
+          "subtype": "origin"
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [],
+        "requirements": "",
+        "activities": {},
+        "enchant": {},
+        "identifier": "alert",
+        "advancement": {},
+        "crewed": false
+      },
+      "_id": "BP3AvL4QpsZ4yyeI",
+      "type": "feat",
+      "img": "icons/creatures/eyes/human-single-brown.webp",
+      "effects": [
+        {
+          "name": "Alert",
+          "img": "icons/creatures/eyes/human-single-brown.webp",
+          "_id": "uvZy4Zzi0oPd54qs",
+          "type": "base",
+          "system": {
+            "changes": [
+              {
+                "key": "flags.dnd5e.initiativeAlert",
+                "value": true,
+                "priority": null,
+                "type": "add",
+                "phase": "initial",
+                "_id": "8eDZVCQ578d9yGce",
+                "conditions": "{}",
+                "replacement": ""
+              }
+            ],
+            "rider": {
+              "statuses": []
+            },
+            "origin": {
+              "actor": null,
+              "behavior": null,
+              "effect": null,
+              "item": null,
+              "message": null
+            },
+            "conditions": "{}",
+            "magical": false
+          },
+          "disabled": false,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "description": "",
+          "origin": null,
+          "tint": "#ffffff",
+          "transfer": true,
+          "statuses": [],
+          "sort": 0,
+          "flags": {
+            "dnd5e": {
+              "riders": {}
+            }
+          },
+          "_stats": {
+            "compendiumSource": null,
+            "duplicateSource": null,
+            "coreVersion": "14.368",
+            "systemId": "dnd5e",
+            "systemVersion": "6.0.5",
+            "createdTime": 1789905822266,
+            "modifiedTime": 1791311333478,
+            "lastModifiedBy": "JrGDYxgwHCutOUKC",
+            "exportSource": null
+          },
+          "start": null,
+          "showIcon": 1,
+          "folder": null
+        }
+      ],
+      "folder": "d5jrO8A6QpjEV9rn",
+      "sort": 100000,
+      "ownership": {
+        "default": 0,
+        "JrGDYxgwHCutOUKC": 3
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          },
+          "sourceId": "Compendium.dnd5e.feats24.Item.phbftAlert000000",
+          "advancementOrigin": "XZNSldwmLkRuKmDK.WJA48TLxfqlc3ygz",
+          "advancementRoot": "XZNSldwmLkRuKmDK.WJA48TLxfqlc3ygz"
+        }
+      },
+      "_stats": {
+        "duplicateSource": null,
+        "coreVersion": "14.368",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3",
+        "createdTime": 1789905822266,
+        "modifiedTime": 1791311333477,
+        "lastModifiedBy": "JrGDYxgwHCutOUKC",
+        "exportSource": null,
+        "compendiumSource": "Compendium.dnd5e.feats24.Item.phbftAlert000000"
+      }
+    }
+  ],
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "core": {
+      "sheetClass": "melliador-helpers.MelliadorCharacterSheet"
+    }
+  },
+  "_stats": {
+    "coreVersion": "14.368",
+    "systemId": "dnd5e",
+    "systemVersion": "6.0.5",
+    "createdTime": 1791311333476,
+    "modifiedTime": 1791311344428,
+    "lastModifiedBy": "JrGDYxgwHCutOUKC",
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": {
+      "worldId": "melliador-entwicklung",
+      "uuid": "Actor.Ydaahhq8M5FCAKxE",
+      "coreVersion": "14.368",
+      "systemId": "dnd5e",
+      "systemVersion": "6.0.0"
+    }
+  }
+}
