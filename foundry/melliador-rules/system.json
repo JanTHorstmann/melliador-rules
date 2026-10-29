@@ -1,0 +1,28 @@
+{
+  "id": "melliador-rules",
+  "title": "Melliador Rules",
+  "description": "Independent Melliador rules system prototype.",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "authors": [
+    {
+      "name": "Melliador Rules Project"
+    }
+  ],
+  "esmodules": [
+    "melliador-rules.mjs"
+  ],
+  "styles": [
+    "styles/test-character-sheet.css"
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {}
+    },
+    "Item": {}
+  },
+  "socket": false
+}

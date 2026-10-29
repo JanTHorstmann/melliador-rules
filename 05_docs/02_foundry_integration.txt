@@ -1,0 +1,67 @@
+﻿FOUNDRY-INTEGRATION â€“ ENTWICKLUNGSSTAND
+
+SYSTEMORDNER
+`foundry/melliador-rules/` ist der installierbare Foundry-Systemordner.
+Den Ordner in Foundrys `Data/systems/` kopieren. Foundry nach Ã„nderungen
+an Manifest oder ES-Modulen neu starten.
+
+STRUKTUR
+- `system.json`: Foundry-Systemmanifest, ID stimmt mit dem Ordnernamen Ã¼berein.
+- `melliador-rules.mjs`: Foundry-Einstiegspunkt, lÃ¤dt beim `init`-Hook.
+- `scripts/core/`: vom Build-Skript kopierte Kernmodule.
+- `03_src/core/`: kanonische, Foundry-unabhÃ¤ngige Implementierung.
+- `clickdummy/`: BrowseroberflÃ¤che, die direkt den kanonischen Kern lÃ¤dt.
+- `tools/build_foundry.py`: synchronisiert den Regelkern in den Systemordner.
+
+PROTOTYP-ZUGRIFF
+Nach dem Laden einer Welt:
+
+`game.melliadorRulesPrototype.rollD20()`
+
+`game.melliadorRulesPrototype.rollAttribute({ attributeId: "str", attributeValue: 10, target: 12 })`
+
+Die Wurf-Funktionen berechnen Ergebnisse, erstellen dabei aber selbst keine Chatnachricht. `postRollToChat` ist der separate Foundry-Adapter fÃ¼r die Darstellung in Foundry und noch keine endgÃ¼ltige Schnittstelle fÃ¼r Melliador Helpers.
+
+DATENMODELL
+Das Manifest deklariert einen leeren Actor-Typ `character`; es definiert keine
+Melliador-Actor-Felder. Actor-Pfade bleiben offen. Der vorhandene
+`test_charakter.json` ist ein D&D5e-Export und wird nicht als Schema oder
+LaufzeitabhÃ¤ngigkeit verwendet.
+
+KOMPATIBILITÃ„T
+Das Manifest nennt Foundry VTT 14 als Mindest- und geprÃ¼fte Version. Das
+System wurde in dieser Arbeitsumgebung nicht gegen eine laufende Foundry-
+Instanz geladen; die Angabe ist daher eine Zielversion, kein bestÃ¤tigter
+Integrationstest.
+
+QUELLEN
+- Foundry System Development: https://foundryvtt.com/article/system-development/
+- Foundry Roll API: https://foundryvtt.com/api/classes/foundry.dice.Roll.html
+- D&D5e Roll Formulas als technisches Datenmodell-Beispiel:
+  https://github.com/foundryvtt/dnd5e/wiki/Roll-Formulas
+
+TEST-CHARAKTERBOGEN
+Das System registriert fÃ¼r Actors vom Typ `character` ein Sheet zum Testen.
+Es stellt sechs Attribute, eine SG-Eingabe, einen allgemeinen W20-Wurf und
+Attributsproben bereit. Die Startwerte orientieren sich an
+`assets/charaktersheet_vorlage.png`; sie sind Beispiel-/Testdaten.
+`Testwerte speichern` schreibt nur in das Flag
+`melliador-rules.testCharacter` am Actor. Es werden keine produktiven
+`system.*`-Datenpfade festgelegt. Ergebnisse werden im Sheet und als
+Chatkarte angezeigt.
+
+CHAT-ADAPTER
+`game.melliadorRulesPrototype.postRollToChat({ actor, title, dieResult,
+modifier, total, target, success })` verÃ¶ffentlicht ein bereits berechnetes
+Ergebnis als ChatMessage. `target` und `success` sind bei einem einfachen
+W20-Wurf optional. Der Adapter wÃ¼rfelt nicht erneut und nutzt Foundrys
+Nachrichtenmodus (`core.messageMode`). Die Chatkarte zeigt W20, Modifikator,
+Gesamt sowie bei Attributsproben SG und Erfolg/Misserfolg.
+
+Die Sheet-Implementierung wurde noch nicht gegen eine laufende Foundry-Instanz
+verifiziert.
+
+
+- Foundry V14 ChatMessage API: https://foundryvtt.com/api/v14/classes/foundry.documents.ChatMessage.html
+- D&D5e 6.x Chat-Roll-Workflow: https://github.com/foundryvtt/dnd5e/blob/6.0.x/module/dice/basic-roll.mjs
+

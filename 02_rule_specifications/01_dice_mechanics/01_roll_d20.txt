@@ -1,35 +1,38 @@
 REGELSPEZIFIKATION – rollD20()
 
 STATUS
-ABGELEITET – Architekturentscheidung
+ABGELEITET – technische Würfelfunktion gemäß Projektentscheidung
 
 ZWECK
-Bereitstellung eines wiederverwendbaren W20-Wurfs.
+Eine wiederverwendbare W20-Quelle für den Regelkern bereitstellen.
 
 FUNKTION
-rollD20()
+rollD20(random?)
 
 EINGABEN
-Keine.
+Optional eine Funktion, die eine Zahl im Bereich [0, 1) liefert. Sie dient
+der reproduzierbaren Prüfung und kann in der Foundry-Umgebung später durch
+eine dortige Würfelquelle ersetzt werden.
 
 RÜCKGABE
-Ganze Zahl von 1 bis einschließlich 20.
+Eine ganze Zahl von 1 bis einschließlich 20. Es werden keine weiteren
+Daten oder Regelbewertungen zurückgegeben.
 
-VERANTWORTLICHKEITEN
-- Erzeugung des Würfelwerts
-- Keine Kenntnis der Charakterdaten
-- Keine Kenntnis der Wurfart
+BERECHNUNG
+floor(random() * 20) + 1
+
+VALIDIERUNG
+- `random` muss eine Funktion sein.
+- Ihr Ergebnis muss endlich und im halboffenen Bereich [0, 1) liegen.
+- Ungültige Würfelquellen lösen einen Fehler aus; es gibt keinen Ersatzwert.
+
+ABGRENZUNG
 - Keine Modifikatorberechnung
-- Keine Erfolgsprüfung
+- Keine Ermittlung eines Zielwerts
+- Keine Bewertung von Erfolg oder Misserfolg
+- Keine Kenntnis von Actor- oder Foundry-Daten
 
 TESTANFORDERUNG
-Der Rückgabewert muss eine ganze Zahl sein und zwischen
-1 und 20 einschließlich liegen.
-
-ERWEITERBARKEIT
-Die Würfelquelle soll für Tests austauschbar sein, damit
-feste Würfelwerte verwendet werden können.
-
-Eine spätere Foundry-Integration darf die technische
-Würfelquelle ersetzen, ohne die fachliche Regelberechnung
-unnötig zu verändern.
+Werte 0 und knapp unter 1 müssen Ergebnisse 1 und 20 liefern. Für alle
+gültigen Stichproben muss die Rückgabe eine ganze Zahl im Bereich 1–20 sein.
+Ungültige Quellfunktionen und Werte müssen abgewiesen werden.

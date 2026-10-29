@@ -1,0 +1,46 @@
+<form class="melliador-sheet" autocomplete="off">
+  <header class="sheet-heading">
+    <div class="character-seal" aria-hidden="true">{{characterName.[0]}}</div>
+    <div>
+      <p class="eyebrow">Melliador Rules · Testbogen</p>
+      <h1>{{characterName}}</h1>
+      <p class="sheet-note">Testoberfläche für Attributswerte und Proben</p>
+    </div>
+    <span class="test-badge">Nur Testdaten</span>
+  </header>
+
+  <section class="abilities-section" aria-labelledby="abilities-heading">
+    <div class="section-heading">
+      <div><p class="eyebrow">Charakterwerte</p><h2 id="abilities-heading">Attribute</h2></div>
+      <button type="button" class="quiet-button" data-action="save-test-data">Testwerte speichern</button>
+    </div>
+    <div class="ability-grid">
+      {{#each abilities}}
+      <article class="ability-card">
+        <span class="ability-id">{{id}}</span>
+        <label for="attribute-{{id}}">{{label}}</label>
+        <div class="ability-value-row">
+          <input id="attribute-{{id}}" name="{{id}}" type="number" min="4" max="20" step="1" value="{{score}}" data-attribute-value="{{id}}" aria-label="{{label}} Wert">
+          <span class="ability-modifier" data-modifier-for="{{id}}">{{modifier}}</span>
+        </div>
+        <button type="button" class="roll-button" data-action="roll-attribute" data-attribute-id="{{id}}">Probe würfeln</button>
+      </article>
+      {{/each}}
+    </div>
+  </section>
+
+  <section class="roll-panel" aria-labelledby="roll-heading">
+    <div class="roll-panel-copy">
+      <p class="eyebrow">Würfelmechanik</p>
+      <h2 id="roll-heading">Proben testen</h2>
+      <p>Der SG wird für den Test hier eingegeben. Die Probe gelingt, wenn W20 plus Attributsmodifikator den SG erreicht.</p>
+    </div>
+    <label class="target-field">Zielwert / SG
+      <input type="number" step="1" value="{{target}}" data-target>
+    </label>
+    <button type="button" class="primary-button" data-action="roll-d20">Allgemeinen W20 würfeln</button>
+  </section>
+
+  <output class="roll-result" data-roll-result data-tone="neutral" aria-live="polite">{{lastResult}}</output>
+  <footer class="sheet-footer">Die angezeigten Startwerte orientieren sich an der Testvorlage. Gespeichert wird ausschließlich unter dem Test-Flag dieses Systems.</footer>
+</form>

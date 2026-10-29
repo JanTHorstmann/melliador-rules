@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Melliador Rules – Würfeltest</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">MELLIADOR RULES · TESTUMGEBUNG</p>
+        <h1>Würfelproben</h1>
+        <p>Teste den allgemeinen W20 und eine Attributsprobe mit dem gemeinsamen Regelkern.</p>
+        <div class="notice"><strong>Prototyp:</strong> Der Attributswert wird hier direkt eingegeben. Actor-Datenpfade und die Helpers-Schnittstelle sind noch offen.</div>
+      </header>
+
+      <section class="card">
+        <div class="title-row"><div><p class="eyebrow">FUNKTION 01</p><h2>Allgemeiner W20</h2></div><span class="d20" aria-hidden="true">20</span></div>
+        <p class="description">Ein einzelner W20 ohne Attribut, Modifikator oder Zielwert.</p>
+        <button id="roll-d20" class="button" type="button">W20 würfeln</button>
+        <output id="d20-result" class="die-result" aria-live="polite">Noch nicht gewürfelt</output>
+      </section>
+
+      <section class="card">
+        <div class="title-row"><div><p class="eyebrow">FUNKTION 02</p><h2>Attributsprobe</h2></div></div>
+        <form id="attribute-form">
+          <div class="fields">
+            <label>Attribut
+              <select id="attribute-id" required>
+                <option value="str">Stärke (STÄ)</option>
+                <option value="dex">Geschicklichkeit (GES)</option>
+                <option value="con">Konstitution (KON)</option>
+                <option value="int">Intelligenz (INT)</option>
+                <option value="wis">Weisheit (WEI)</option>
+                <option value="cha">Charisma (CHA)</option>
+              </select>
+            </label>
+            <label>Attributswert <span class="hint">4–20</span>
+              <input id="attribute-value" type="number" min="4" max="20" step="1" value="10" required>
+            </label>
+            <label>Schwierigkeitsgrad (SG)
+              <input id="target" type="number" step="any" value="12" required>
+            </label>
+            <label>Fester W20-Wert <span class="hint">optional für Tests</span>
+              <input id="fixed-die" type="number" min="1" max="20" step="1" placeholder="Zufallswurf">
+            </label>
+          </div>
+          <button class="button" type="submit">Probe würfeln</button>
+        </form>
+        <div id="attribute-result" class="result" aria-live="polite">
+          <p class="result-label">ERGEBNIS</p><p class="empty">Noch keine Probe ausgeführt</p>
+        </div>
+        <p class="formula">W20 + Attributsmodifikator ≥ SG</p>
+      </section>
+
+      <footer><span>Regelkern unabhängig von Foundry</span><span>Lokaler Klickdummy</span></footer>
+    </main>
+  </body>
+</html>

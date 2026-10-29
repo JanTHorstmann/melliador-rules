@@ -1,0 +1,46 @@
+# Vorläufige Foundry-Schnittstelle
+
+Der aktuelle Zugang ist experimentell und noch keine freigegebene Schnittstelle
+für Melliador Helpers. Nach dem `init`-Hook stellt das Foundry-System
+`game.melliadorRulesPrototype` bereit.
+
+## Regelkern-Aufrufe
+
+```js
+game.melliadorRulesPrototype.rollD20();
+
+game.melliadorRulesPrototype.rollAttribute({
+  attributeId: "str",
+  attributeValue: 18,
+  target: 15
+});
+```
+
+`rollD20()` gibt nur das W20-Ergebnis als Ganzzahl von 1 bis 20 zurück.
+`rollAttribute()` gibt unter anderem `dieResult`, `modifier`, `target`,
+`total` und `success` zurück. Der Aufrufer übergibt den Attributswert; es
+werden keine Actor-Felder ausgelesen.
+
+## Foundry-Chat-Adapter
+
+```js
+await game.melliadorRulesPrototype.postRollToChat({
+  actor,
+  title: "Attributsprobe: Stärke",
+  dieResult: 13,
+  modifier: 4,
+  total: 17,
+  target: 15,
+  success: true
+});
+```
+
+Pflichtfelder sind `actor`, `title` und `dieResult`. `modifier` ist optional
+und standardmäßig `0`; `total` wird andernfalls aus Wurf und Modifikator
+gebildet. `target` und `success` werden bei Proben mitgegeben. Der Adapter
+berechnet keine Regelwerte und würfelt nicht erneut. Er erstellt eine
+Foundry-Chatnachricht für den Actor und übernimmt Foundrys aktuelle
+Nachrichtensichtbarkeit aus `core.messageMode`.
+
+Diese Adapterfunktion ist Foundry-spezifisch. Der reine Regelkern bleibt
+Foundry-unabhängig.

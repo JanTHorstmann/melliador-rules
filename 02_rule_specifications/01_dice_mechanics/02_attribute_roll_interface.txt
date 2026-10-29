@@ -1,58 +1,62 @@
-SCHNITTSTELLENSPEZIFIKATION – ATTRIBUTSWURF
+﻿REGELSPEZIFIKATION â€“ Attributswurf
 
 STATUS
-ENTWURF – noch nicht implementiert
+PROTOTYP â€“ Regelkernfunktion implementiert; Actor-AuflÃ¶sung und Ã¶ffentliche
+Schnittstelle fÃ¼r Melliador Helpers sind noch offen.
 
 ZIEL
-Ein Charakterbogen soll einen Attributswurf auslösen können,
-ohne die interne Regelberechnung selbst implementieren
-zu müssen.
+Einen Attributswurf reproduzierbar berechnen, ohne dass der Regelkern Foundry
+oder ein Charakterbogen kennen muss.
 
-VORGESEHENER EINSTIEGSPUNKT
-requestAttributeRoll()
+KERNFUNKTION
+rollAttribute({ attributeId, attributeValue, target, roll? })
 
-VORGESEHENE EINGABEN
-
-actorId:
-Identifiziert den würfelnden Charakter.
-
-attributeId:
-Identifiziert das für den Wurf verwendete Attribut.
+EINGABEN
+- `attributeId`: eine der technischen IDs `str`, `dex`, `con`, `int`, `wis`,
+  `cha`.
+- `attributeValue`: ganzzahliger Attributswert. Der Prototyp akzeptiert 4â€“20.
+- `target`: endlicher numerischer SG, der von auÃŸen Ã¼bergeben wird.
+- `roll`: optionale WÃ¼rfelfunktion; Standard ist `rollD20()`.
 
 VERARBEITUNG
-1. Wurfanforderung prüfen.
-2. Benötigte Charakterdaten ermitteln.
-3. Regelrelevante Modifikatoren bestimmen.
-4. Benötigten Zielwert ermitteln oder entgegennehmen.
-5. rollAttribute() ausführen.
-6. Ergebnis strukturiert zurückgeben.
+1. Attribut-ID, SG und WÃ¼rfelfunktion prÃ¼fen.
+2. Attributsmodifikator bestimmen.
+3. Einen W20 Ã¼ber `roll()` beziehen und das Ergebnis auf ganze Zahl 1â€“20 prÃ¼fen.
+4. `total = dieResult + modifier` berechnen.
+5. `success = total >= target` bestimmen.
+6. Ergebnisobjekt zurÃ¼ckgeben.
 
-RÜCKGABE
-Die endgültige Rückgabestruktur wird vor der Implementierung
-festgelegt.
+RÃœCKGABE DES PROTOTYPS
+- `type`: `attribute`
+- `attributeId`
+- `dieResult`
+- `modifier`
+- `target`
+- `total`
+- `success`
 
-VORGESEHENE ERGEBNISINFORMATIONEN
-- Wurfart
-- Charakterkennung
-- Attributkennung
-- W20-Ergebnis
-- Gesamtmodifikator
-- Zielwert
-- Gesamtergebnis
-- Erfolg oder Misserfolg
+FEHLER
+- Unbekannte Attribut-ID: `RangeError`.
+- Attributswert keine ganze Zahl oder auÃŸerhalb 4â€“20: `RangeError`.
+- SG nicht endlich numerisch: `TypeError`.
+- WÃ¼rfelfunktion fehlt/falscher Typ: `TypeError`.
+- WÃ¼rfelwert keine ganze Zahl von 1â€“20: `RangeError`.
+- Fehlende Pflichtwerte werden nicht durch 0 ersetzt.
 
-ARCHITEKTURGRUNDSÄTZE
-- Die Schnittstelle ist unabhängig vom HTML-Aufbau des
-  Charakterbogens.
-- Die Regelberechnung ist unabhängig von Foundry-APIs.
-- Der Charakterbogen soll keine konkurrierende Berechnung
-  der Melliador-Regeln durchführen müssen.
-- Fehlende Pflichtdaten dürfen nicht stillschweigend durch
-  0 ersetzt werden.
+FOUNDY-ENTWICKLUNGSZUGANG
+Der Entwicklungszugang stellt den Regelkern unter `game.melliadorRulesPrototype` bereit. Die Funktionen `rollD20()` und `rollAttribute()` berechnen Ergebnisse ohne Actor-Zugriff und ohne Chat-Ausgabe. Der separate Foundry-Adapter `postRollToChat()` kann ein bereits berechnetes Ergebnis als Chatkarte verÃ¶ffentlichen. Alle diese ZugÃ¤nge sind vorlÃ¤ufig und kein stabiler Vertrag fÃ¼r Melliador Helpers.
 
-OFFEN
-- Endgültige Funktionssignatur
-- Technische Veröffentlichung über Foundry
-- Herkunft des Schwierigkeitsgrads
-- Zusammensetzung der Modifikatoren
-- Fehler- und Rückgabeverhalten
+REGELSTATUS
+- BELEGT: W20, Modifikatoren addieren und Erfolg bei Erreichen/Ãœberschreiten
+  des SG (Melliador-Schnellstarter 1.2, PDF S. 24).
+- BELEGT: Attributsmodifikator-Tabelle fÃ¼r die aufgefÃ¼hrten Werte
+  (Melliador-Schnellstarter 1.2, PDF S. 25).
+- ABGELEITET: Formel `floor((attributeValue - 10) / 2)` entspricht den
+  Tabellenwerten 4â€“19.
+- VOM PROJEKTVERANTWORTLICHEN VORGEGEBEN: Attributswert 20 ergibt +5.
+  Die Tabelle auf PDF S. 25 zeigt den Eintrag fÃ¼r 20 nicht ausdrÃ¼cklich.
+- OFFEN: Modifikatorverhalten auÃŸerhalb des Bereichs 4â€“20, Fertigkeits- und
+  WerkzeugÃ¼bung, Vorteil/Nachteil, Sonderregeln, Actor-Datenpfade, endgÃ¼ltige
+  endgÃ¼ltige API und Fehlervertrag.
+
+
